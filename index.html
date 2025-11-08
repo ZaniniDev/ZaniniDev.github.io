@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Plataforma Interativa pelo Clima + Fundo Municipal de Adaptação e Resiliência Climática. Participe de iniciativas sustentáveis e projetos ambientais para combater as mudanças climáticas.">
+  <meta name="keywords" content="clima, sustentabilidade, meio ambiente, mudanças climáticas, fundo climático, adaptação climática, resiliência, projetos ambientais, sustentável, verde">
+  <meta name="author" content="Marcus Vinicius Soares Zanini, Climalab">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PIC - Plataforma Interativa pelo Clima">
+  <meta property="og:description" content="Plataforma Interativa pelo Clima + Fundo Municipal de Adaptação e Resiliência Climática - Participe de iniciativas sustentáveis">
+  <meta property="og:image" content="icons/Icon-192.png">
+  <meta property="og:url" content="">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="PIC - Plataforma Interativa pelo Clima">
+  <meta property="twitter:description" content="Plataforma Interativa pelo Clima + Fundo Municipal de Adaptação e Resiliência Climática">
+  <meta property="twitter:image" content="icons/Icon-192.png">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PIC - Plataforma Interativa pelo Clima">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="canonical" href="">
+
+  <title>PIC = Plataforma Interativa pelo Clima</title>
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PIC - Plataforma Interativa pelo Clima",
+    "description": "Plataforma Interativa pelo Clima + Fundo Municipal de Adaptação e Resiliência Climática",
+    "url": "",
+    "logo": "icons/Icon-192.png"
+  }
+  </script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+<script src="main.dart.js" type="application/javascript"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3638238568').then(function(registration) {
+          registration.onupdatefound = function() {
+            var installingWorker = registration.installing;
+            if (installingWorker == null) {
+              return;
+            }
+            installingWorker.onstatechange = function() {
+              if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                // Detectou novo conteúdo e força o reload!
+                console.log('Novo conteúdo detectado, atualizando a página...');
+                window.location.reload();
+              }
+            };
+          };
+        }).catch(function(error) {
+          console.log('Service Worker registration failed: ', error);
+        });
+      });
+    }
+  </script>
+</html>
